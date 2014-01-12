@@ -1,6 +1,6 @@
 name: Feudalism
 version: 0.7
-authors: [ZNickq]
+authors: [ZNickq, Natey59]
 main: com.valarmorghulismc.feudalism.Feudalism
 commands:
   h:
