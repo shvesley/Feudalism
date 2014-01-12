@@ -1,0 +1,13 @@
+name: Feudalism
+version: 0.7
+authors: [ZNickq]
+main: com.valarmorghulismc.feudalism.Feudalism
+commands:
+  h:
+    usage: The House commands!
+  c:
+    usage: The Chunk commands!
+  rel:
+    usage: The Religion commands!
+  fa:
+    usage: The Admin commands!
