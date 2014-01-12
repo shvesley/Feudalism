@@ -4,7 +4,6 @@
  */
 package com.valarmorghulismc.feudalism.chunk.types;
 
-import com.valarmorghulismc.feudalism.Configuration;
 import com.valarmorghulismc.feudalism.Feudalism;
 import com.valarmorghulismc.feudalism.chunk.ChunkLocation;
 import java.util.Random;

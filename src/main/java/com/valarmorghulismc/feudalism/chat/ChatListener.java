@@ -4,7 +4,6 @@
  */
 package com.valarmorghulismc.feudalism.chat;
 
-import com.valarmorghulismc.feudalism.player.FeudalPlayer;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;

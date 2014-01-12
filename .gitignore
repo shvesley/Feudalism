@@ -1,6 +1,12 @@
+# Compiled Sources #
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# Eclipse Files #
+.classpath
+.project
+
