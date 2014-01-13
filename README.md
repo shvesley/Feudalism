@@ -9,3 +9,5 @@ Goal: A Bukkit plugin that allows for the fluctuation of hierarchical power and 
 Current state: UNCOMPLETE. 
 
 Looking for programmers who are interested in having a bit of fun and gaining experience.
+
+All documentation guiding plugin development available here: https://docs.google.com/document/d/1hGPWCX4l8cgW5gayIMw02O4Bd3XLKQ49_OYMczHbM5s/edit
