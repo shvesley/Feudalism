@@ -5,9 +5,12 @@ main: com.valarmorghulismc.feudalism.Feudalism
 commands:
   h:
     usage: The House commands!
+    aliases: ["house"]
   c:
     usage: The Chunk commands!
+    aliases: ["chunk"]
   rel:
     usage: The Religion commands!
+    aliases: ["religion"]
   fa:
     usage: The Admin commands!

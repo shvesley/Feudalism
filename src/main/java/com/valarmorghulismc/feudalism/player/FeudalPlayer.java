@@ -131,11 +131,11 @@ public final class FeudalPlayer {
 			}
 		}
 	}
-	
+
 	public void setChannel(String nChannel) {
 		channel = nChannel;
 	}
-	
+
 	public String getChannel() {
 		return channel;
 	}
@@ -156,14 +156,14 @@ public final class FeudalPlayer {
 		}
 		return hh;
 	}
-	
+
 	public Religion getReligion() {
 		if(house != null) {
 			return getHouse().getReligion();
 		}
 		return religion;
 	}
-	
+
 	public void setReligion(Religion nR) {
 		this.religion = nR;
 		this.rrank = ReligionRank.FOLLOWER;
