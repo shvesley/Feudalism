@@ -4,6 +4,9 @@
  */
 package com.valarmorghulismc.feudalism.chunk.types;
 
+import com.valarmorghulismc.feudalism.chunk.types.listeners.MerchantListener;
+import org.bukkit.event.Listener;
+
 /**
  *
  * @author ZNickq
@@ -24,5 +27,9 @@ public class Merchant extends ChunkType{
 	public int getIncrease() {
 		return 0;
 	}
-	
+
+    @Override
+    public Listener getListener(){
+        return new MerchantListener(); //Should only be called onEnable()
+    }
 }

@@ -27,24 +27,7 @@ public class ChunkTypeListener implements Listener{
 		this.instance = instance;
 	}
 	
-	@EventHandler(priority = EventPriority.HIGHEST)
-	public void onTryFarm(PlayerInteractEvent event) {
-		//System.out.println("Attempting farm!");
-		if(!event.hasItem() || event.isCancelled() || event.getClickedBlock() == null || event.getAction() != Action.RIGHT_CLICK_BLOCK) {
-			//System.out.println("Returning!");
-			return;
-		}
-		if(isForFarming(event.getItem().getType()) && event.getClickedBlock().getType() == Material.SOIL) {
-			//System.out.println("Is for farming, soil!");
-			ChunkLocation curIn = new ChunkLocation(event.getClickedBlock().getLocation());
-			ChunkInfo curInfo = ChunkInfo.getChunkInfo(curIn);
-			if(curInfo.getType() == null || curInfo.getType() != ChunkType.FARM) {
-				//System.out.println("Going on");
-				event.setCancelled(true);
-				event.getPlayer().sendMessage(ChatColor.GOLD+"You can only plant crops on farms!");
-			}
-		}
-	}
+
 	
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onTryShop(PlayerInteractEvent event) {
@@ -71,8 +54,5 @@ public class ChunkTypeListener implements Listener{
 		}
 	}
 
-	private boolean isForFarming(Material type) {
-		return type == Material.SEEDS || type == Material.MELON_SEEDS || type == Material.PUMPKIN_SEEDS || type == Material.CARROT || type == Material.SUGAR_CANE || type == Material.POTATO_ITEM;
-	}
 	
 }

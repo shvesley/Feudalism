@@ -5,6 +5,8 @@
 package com.valarmorghulismc.feudalism.chunk.types;
 
 import com.valarmorghulismc.feudalism.chunk.ChunkLocation;
+import org.bukkit.event.Listener;
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -70,6 +72,8 @@ public abstract class ChunkType {
 	public abstract int getInitial();
 	
 	public abstract int getIncrease();
+
+    public abstract Listener getListener();
 	
 	public int getTickIntervalInMins() {
 		return -1;

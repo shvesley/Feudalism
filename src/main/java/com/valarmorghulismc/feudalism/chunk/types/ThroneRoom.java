@@ -4,6 +4,9 @@
  */
 package com.valarmorghulismc.feudalism.chunk.types;
 
+import com.valarmorghulismc.feudalism.chunk.types.listeners.ThroneRoomListener;
+import org.bukkit.event.Listener;
+
 /**
  *
  * @author ZNickq
@@ -24,5 +27,9 @@ public class ThroneRoom extends ChunkType{
 	public int getIncrease() {
 		return 0;
 	}
-	
+
+    @Override
+    public Listener getListener(){
+        return new ThroneRoomListener(); //Should only be called onEnable()
+    }
 }

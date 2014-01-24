@@ -6,11 +6,14 @@ package com.valarmorghulismc.feudalism.chunk.types;
 
 import com.valarmorghulismc.feudalism.Feudalism;
 import com.valarmorghulismc.feudalism.chunk.ChunkLocation;
-import java.util.Random;
+import com.valarmorghulismc.feudalism.chunk.types.listeners.PastureListener;
 import org.bukkit.Location;
 import org.bukkit.entity.Animals;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
+import org.bukkit.event.Listener;
+
+import java.util.Random;
 
 /**
  *
@@ -67,4 +70,9 @@ public class Pasture extends ChunkType {
 	public int getTickIntervalInMins() {
 		return Feudalism.getConfiguration().getPastureTickInterval();
 	}
+
+    @Override
+    public Listener getListener(){
+        return new PastureListener(); //Should only be called onEnable()
+    }
 }
